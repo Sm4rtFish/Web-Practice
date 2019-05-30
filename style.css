@@ -1,0 +1,5 @@
+body { text-align: center; }
+#logo { margin-top: 80px; }
+.menu {	margin: 60px 0; }
+.menu a { font-size: 16px; font-family: 'Helvetica', serif; color: #58595B; cursor: pointer}
+.menu a:not(:last-child) { margin-right: 20px; }
