@@ -13,15 +13,23 @@
 		<img id="logo" src="images/logo.png" width="165px" height="58px">
 
 		<div class="menu">
-			<a id="home" onclick="toHome();" style="font-weight: bold;">Home</a>
-			<a id="seoul" onclick="toSeoul();">Seoul</a>
-			<a id="tokyo" onclick="toTokyo();">Tokyo</a>
-			<a id="paris" onclick="toParis();">Paris</a>
+			<a id="home">Home</a>
+			<a id="seoul">Seoul</a>
+			<a id="tokyo">Tokyo</a>
+			<a id="paris">Paris</a>
 		</div>
 
-		<img id="photo" src="images/home.png" width="90%" onmouseenter="mouseOnPhoto();" onmouseleave="mouseLeavePhoto();">
+		<img id="photo" src="images/home.png" width="90%">
 
 		<script>
+			$("#home").on('click', toHome);
+  			$("#seoul").on('click', toSeoul);
+  			$("#tokyo").on('click', toTokyo);
+  			$("#paris").on('click', toParis);
+
+  			$('#photo').on('mouseenter', mouseOnPhoto);
+  			$('#photo').on('mouseleave', mouseLeavePhoto);
+
 			function toHome() {
 				$('#photo').attr('src', 'images/home.png');
 				$("#home").css('font-weight', 'bold');
